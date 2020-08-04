@@ -1,0 +1,38 @@
+{
+    "name": "qhweb/think-addons",
+    "description": "The ThinkPHP6 Addons Package for YYCMS",
+    "require": {
+        "topthink/framework": "6.0",
+        "topthink/think-view": "1.0",
+        "topthink/think-helper": "3.0"
+    },
+    "authors": [
+        {
+            "name": "qhweb",
+            "email": "qhweb@foxmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "think\\": "src/"
+        },
+        "files": [
+            "src/helper.php"
+        ]
+    },
+    "extra": {
+        "think": {
+            "services": [
+                "think\\addons\\Service"
+            ],
+            "config":{
+                "addons": "src/config.php"
+            }
+        }
+    },
+    "scripts" : {
+        "post-install-cmd": [
+            "php think addons:config"
+        ]
+    }
+}
