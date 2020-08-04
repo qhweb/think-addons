@@ -1,8 +1,8 @@
 # think-addons
-The ThinkPHP 6 Addons Package  自用
+The ThinkPHP 6 Addons Package
 
 ## 安装
-> composer require qhweb/think-addons
+> composer require zzstudio/think-addons
 
 ## 配置
 

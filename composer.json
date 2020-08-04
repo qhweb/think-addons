@@ -1,11 +1,11 @@
 {
-    "name": "qhweb/think-addons",
-    "description": "The ThinkPHP6 Addons Package for YYCMS",
+    "name": "zz-studio/think-addons",
+    "description": "The ThinkPHP6 Addons Package",
     "license": "Apache-2.0",
     "authors": [
         {
-            "name": "qhweb",
-            "email": "qhweb@foxmail.com"
+            "name": "byron",
+            "email": "xiaobo.sun@qq.com"
         }
     ],
     "require": {
@@ -31,5 +31,10 @@
                 "addons": "src/config.php"
             }
         }
+    },
+    "scripts" : {
+        "post-install-cmd": [
+            "php think addons:config"
+        ]
     }
 }
