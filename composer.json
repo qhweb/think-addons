@@ -1,10 +1,12 @@
 {
     "name": "qhweb/think-addons",
     "description": "The ThinkPHP6 Addons Package for YYCMS",
+    "license": "Apache-2.0",
     "require": {
-        "topthink/framework": "6.0",
-        "topthink/think-view": "1.0",
-        "topthink/think-helper": "3.0"
+        "php": ">=7.1.0",
+        "topthink/framework": "^6.0",
+        "topthink/think-view": "^1.0",
+        "topthink/think-helper": "^3.0.0"
     },
     "authors": [
         {
@@ -29,5 +31,10 @@
                 "addons": "src/config.php"
             }
         }
+    },
+    "scripts" : {
+        "post-install-cmd": [
+            "php think addons:config"
+        ]
     }
 }
